@@ -1,0 +1,97 @@
+:root{
+    --yelloColor:gold;
+}
+body{
+    font-family:sans-serif
+  }
+  /* navbar */
+.navbar{
+    position: fixed;
+    z-index: 111;
+    width: 100%;
+  }
+  .navbar .navbar-nav .nav-link{
+    color: black;
+    transition: 0.5s;
+  }  .navbar .navbar-nav .nav-link.active,
+  .navbar .navbar-nav .nav-link:focus,
+  .navbar .navbar-nav .nav-link:hover{
+    color: var(--yelloColor);
+}
+  /* header */
+  .header{
+    background-image: url(images/france.png);
+    height: 100vh;
+    background-size: cover;
+  }
+  .header .content{
+    text-align: center;
+    padding-top: 280px;
+  }
+  .btn1{
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 9px;
+    width: 150px;
+    transition: 0.5s;
+  }
+  .btn1:hover{
+color: white;
+letter-spacing: 1.2px;
+  }
+  .contairy::after{
+    content:'';
+    animation: contairy 5s infinite;
+  }
+  @keyframes contairy{
+    0%{
+        content: 'France' ;
+    }
+    10%{
+        content: 'Germany' ;
+    }
+    20%{
+        content: 'Kanda' ;
+    }
+    30%{
+        content: 'Italy' ;
+    }
+    40%{
+        content: 'chaina' ;
+    }
+    50%{
+        content: 'india' ;
+    }
+    60%{
+        content: 'korea' ;
+    }
+    70%{
+        content: 'france' ;
+    }
+    80%{
+        content: 'france' ;
+    }
+    90%{
+        content: 'france' ;
+    }
+    0%{
+        content: 'france' ;
+    }
+  }
+  /* services */
+  .services .x{
+    box-shadow: rgb(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 5px;
+    text-align: center;
+  }
+  .services .x > *{
+    margin-top: 10px;
+  }
+  /* gallary */
+.gallary img{
+    height: 200px;
+    margin-top: 10px;
+    width: 100%;
+}
+
